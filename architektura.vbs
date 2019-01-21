@@ -1,0 +1,5 @@
+Set WshShell = WScript.CreateObject("WScript.Shell")
+Set WshSysEnv = WshShell.Environment("SYSTEM")
+WScript.Echo WshSysEnv("PROCESSOR_ARCHITECTURE")
+WScript.Echo WshSysEnv("PROCESSOR_IDENTIFIER")
+WScript.Echo WshSysEnv("PROCESSOR_REVISION")
